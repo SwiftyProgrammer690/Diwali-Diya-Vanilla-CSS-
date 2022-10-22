@@ -1,0 +1,149 @@
+h1 {
+  color: #FFF;
+  font-size: 10vh;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+}
+
+*,
+*:before,
+*:after,{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: #000000;
+
+}
+.container {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.diya {
+  height: 150px;
+  width: 300px;
+  background-color: #c98a31;
+  border-radius: 0 0 150px 150px;
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  right: 50%;
+  bottom: 50px;
+  overflow: hidden;
+}
+.inside {
+  width: 300px;
+  height: 60px;
+  background-color: #171717;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  right: 50%;
+  bottom: 170px;
+}
+.shadow {
+  height: 40px;
+  width: 300px;
+  background-color: rgba(25, 5, 71, 0.5);
+  position: absolute;
+  bottom: 30px;
+  border-radius: 50%;
+  margin: auto;
+  left: 50%;
+  right: 50%;
+}
+.flame {
+  height: 150px;
+  width: 175px;
+  background-color: #f40b0b;
+  border-radius: 160px 0;
+  transform: rotate(-45deg);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 36px;
+  animation: scale-up 2s infinite;
+}
+@keyframes scale-up {
+  50% {
+    transform: rotate(-45deg) scale(1.05);
+    bottom: 42px;
+  }
+}
+.flame:after {
+  content: "";
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  background-color: #FFFF00;
+  border-radius: 120px 0;
+  bottom: 0;
+}
+.light {
+  height: 330px;
+  width: 330px;
+/*   background-color: rgba(253, 241, 194, 0.2); */
+background: rgb(255,112,0);
+background: radial-gradient(circle, rgba(255,112,0,1) 1%, rgba(0,0,0,1) 52%);
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+}
+.light:before,
+.light:after {
+  content: "";
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  background-color: rgba(253, 241, 194, 0.3);
+  border-radius: 50%;
+  animation: shine 5s linear infinite;
+}
+@keyframes shine {
+  50% {
+    transform: scale(0.5);
+    opacity: 0.2;
+  }
+}
+.light:before {
+  bottom: 30px;
+  right: 60px;
+}
+.light:after {
+  top: 50px;
+  left: 80px;
+  animation-delay: 1s;
+}
+.line-1,
+.line-2 {
+  position: absolute;
+  height: 60px;
+  width: 320px;
+  border: none;
+  border-bottom: 8px solid #ffffff;
+  border-radius: 50%;
+  left: -10px;
+}
+.line-2 {
+  top: 60px;
+}
+.dots {
+  height: 60px;
+  width: 320px;
+  border: none;
+  border-bottom: 8px dotted #fdc90d;
+  position: absolute;
+  border-radius: 50%;
+  top: 30px;
+  left: -10px;
+}
