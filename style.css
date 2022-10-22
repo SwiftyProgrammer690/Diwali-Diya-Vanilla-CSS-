@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
+
 h1 {
   color: #FFF;
   font-size: 10vh;
   position: absolute;
   left: 10%;
   right: 10%;
+  font-family: 'Courier Prime';
 }
 
 *,
