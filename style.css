@@ -7,6 +7,28 @@ h1 {
   left: 10%;
   right: 10%;
   font-family: 'Courier Prime';
+  overflow: hidden;
+}
+
+p {
+  color: #ff6600;
+  font-size: 4.5vh;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 30%;
+  font-family: 'Courier Prime';
+  overflow: hidden;
+}
+
+diwali-links {
+  color: #ffdd00;
+  font-size: 4.5vh;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 20%;
+  font-family: 'Courier Prime';
 }
 
 *,
@@ -65,15 +87,15 @@ body {
 }
 .flame {
   height: 150px;
-  width: 175px;
+  width: 170px;
   background-color: #f40b0b;
   border-radius: 160px 0;
   transform: rotate(-45deg);
   position: absolute;
   margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 36px;
+/*   left: -200px;
+  right: -200px; */
+  bottom: 50px;
   animation: scale-up 2s infinite;
 }
 @keyframes scale-up {
@@ -99,7 +121,7 @@ background: rgb(255,112,0);
 background: radial-gradient(circle, rgba(255,112,0,1) 1%, rgba(0,0,0,1) 52%);
   border-radius: 50%;
   position: absolute;
-  left: -15px;
+  left: -70px;
   bottom: 0;
 }
 .light:before,
@@ -128,7 +150,9 @@ background: radial-gradient(circle, rgba(255,112,0,1) 1%, rgba(0,0,0,1) 52%);
   animation-delay: 1s;
 }
 .line-1,
-.line-2 {
+.line-2,
+.line-3,
+.line-4{
   position: absolute;
   height: 60px;
   width: 320px;
@@ -139,6 +163,12 @@ background: radial-gradient(circle, rgba(255,112,0,1) 1%, rgba(0,0,0,1) 52%);
 }
 .line-2 {
   top: 60px;
+}
+.line-3 {
+  bottom: 30%
+}
+.line-4 {
+  bottom: 60px;
 }
 .dots {
   height: 60px;
